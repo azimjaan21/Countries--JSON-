@@ -3621,8 +3621,13 @@ countries = {
 selected_country = input("Write any country with its ISO code,\nand you can get brief info about that countries neighbor countries !\n-> ")
 
 result = countries.get(selected_country, False)
-border_countries = result['neighbour']
-list_cntry = [neighbour['name'] for neighbour in border_countries]
+
 if result :
-  print('Selected country -> ', result['name'], '\nNeighbor countries: ', list_cntry)
+    
+    border_countries = result['neighbour']
+    
+    list_cntry = [neighbour['name'] for neighbour in border_countries]
+
+    print('Selected country -> ', result['name'], '\nNeighbor countries: ', list_cntry)
+  
 else : print('Not available ISO CODE!\nPlease, try another one.')
