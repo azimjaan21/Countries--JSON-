@@ -3625,5 +3625,4 @@ border_countries = result['neighbour']
 list_cntry = [neighbour['name'] for neighbour in border_countries]
 if result :
   print('Selected country -> ', result['name'], '\nNeighbor countries: ', list_cntry)
-  
 else : print('Not available ISO CODE!\nPlease, try another one.')
