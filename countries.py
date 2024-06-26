@@ -3617,7 +3617,8 @@ countries = {
       ]
     }
   }
-  
+
+
 selected_country = input("Write any country with its ISO code,\nand you can get brief info about that countries neighbor countries !\n-> ")
 
 result = countries.get(selected_country, False)
@@ -3631,3 +3632,5 @@ if result :
     print('Selected country -> ', result['name'], '\nNeighbor countries: ', list_cntry)
   
 else : print('Not available ISO CODE!\nPlease, try another one.')
+print('\n##################################\n')
+selected_country = input("Write any country with its ISO code,\nand you can get brief info about that countries neighbor countries !\n-> ")
